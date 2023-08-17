@@ -85,6 +85,10 @@ Summary: All models achieve high accuracy, but there's a common trade-off betwee
 
 # Learning Curve of Machine Learning Models 
 ![image](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/4528c6f4-c3bd-4814-b14d-102f8bc0d7af)
+![image](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/15854ad1-a692-45be-bf7c-01ae13d959ab)
+![image](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/981d724c-a69c-4c62-8ab0-d3ffd47e7954)
+
+
 # Implementation Of Deep learning model 
 Discussing the structure of the CNN and RNN models and how they were constructed:
 
