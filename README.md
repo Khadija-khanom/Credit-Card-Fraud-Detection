@@ -21,12 +21,12 @@ The prevalence of credit card fraud continues to pose significant financial and 
 Table of Contents
 =================
 
-  * # Data Visualization
-  * [Implementation of Machine learning Models]
-  * [Installation]
-        * [OR using Pathogen:](#or-using-pathogen)
-        * [OR using Vundle:](#or-using-vundle)
-  * [License](#license)
+  * # 1. Data Visualization
+  * # 2. Implementation of Machine learning Models
+  * # 3. Evaluating the Performance of Machine Learning Models
+  * # 4. Implementation of Deep learning Models
+  * # 5. Evaluating the Performance of Machine Learning Models
+  * # 6. Comparative analysis of machine learning and deep learning models 
 # Data Visualization
 ![image](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/0dd94017-5b26-42a5-932d-5dfe6aab099e)
 Distribution ![image](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/31670df0-bd58-4bcd-8ec2-a7c710395a9a)
