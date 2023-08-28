@@ -66,31 +66,31 @@ Now, analyzing the performance of these models and determine which one performed
 
 **Random Forest**:
 
-*Highest precision for class 0 (non-fraudulent transactions), indicating that it accurately predicts a high percentage of actual non-fraudulent cases.
+   *Highest precision for class 0 (non-fraudulent transactions), indicating that it accurately predicts a high percentage of actual non-fraudulent cases.
 
-*High precision and recall for class 1, making it effective at both identifying actual fraudulent transactions and non-fraudulent transactions.
+   *High precision and recall for class 1, making it effective at both identifying actual fraudulent transactions and non-fraudulent transactions.
 
 **Decision Tree**:
 
-*High precision for class 0 and recall for class 1.
+   *High precision for class 0 and recall for class 1.
 
-*Very low precision for class 1, indicating a high number of false positives.
+   *Very low precision for class 1, indicating a high number of false positives.
 
-*High recall for class 1, suggesting it identifies a good portion of actual fraudulent transactions, but at the cost of more false positives.
+   *High recall for class 1, suggesting it identifies a good portion of actual fraudulent transactions, but at the cost of more false positives.
 
 **Logistic Regression**:
 
-*High precision and recall for class 0.
+   *High precision and recall for class 0.
 
-*Very low precision for class 1, leading to many false positives.
+   *Very low precision for class 1, leading to many false positives.
 
-*Very high recall for class 1, indicating that it captures most actual fraudulent transactions.
+   *Very high recall for class 1, indicating that it captures most actual fraudulent transactions.
 
 **K-Nearest Neighbors**:
 
-*Highest precision for class 0.
+   *Highest precision for class 0.
 
-*Similar precision, recall, and F1-score for class 1 as Random Forest, indicating its effectiveness in identifying fraudulent transactions.
+   *Similar precision, recall, and F1-score for class 1 as Random Forest, indicating its effectiveness in identifying fraudulent transactions.
 
 **Best Performing Model**: Taking into consideration accuracy, precision, recall, and F1-score for both classes, the** Random Forest model** emerges as the best performer. It achieves an outstanding balance between precision and recall for both classes, indicating its robustness in identifying both fraudulent and non-fraudulent transactions accurately. The ensemble nature of Random Forest contributes to its ability to generalize well and manage overfitting, making it a suitable choice for fraud detection tasks.
 
