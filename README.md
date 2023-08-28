@@ -60,7 +60,8 @@ Evaluating the Models:For each model, various evaluation metrics are computed an
 # Evaluating the Performance of Machine Learning Models
 Here's the table with accuracy, precision, recall, and F1-score for both classes 0 and 1, followed by the analysis of the best-performing model:
 
-![image](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/588c5ca3-d6f4-4f71-8306-ae3d07209855)
+![image](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/a40820d7-217e-469b-84aa-6556aa750e8d)
+
 
 
 Now, analyzing the performance of these models and determine which one performed best:
