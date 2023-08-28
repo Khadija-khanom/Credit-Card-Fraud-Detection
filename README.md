@@ -35,8 +35,11 @@ Box plots to visualize outliers ![image](https://github.com/Khadija-khanom/Credi
 This section demonstrates the process of building and evaluating several machine learning models for credit card fraud detection using the provided dataset. It covers the Random Forest, Decision Tree, Logistic Regression, and K-Nearest Neighbors models. Let's break down the structure and the process of building these models:
 
 **Model Initialization**: For each model (Random Forest, Decision Tree, Logistic Regression, and K-Nearest Neighbors), the code initializes a corresponding model object with specified hyperparameters.
+
 **Training the Models**: For each model, the resampled training data (X_train_resampled, y_train_resampled) obtained from applying SMOTE is used to train the model using the fit method.
+
 **Making Predictions**: After training each model, predictions are made on the test set (X_test) using the predict method, and the predicted labels are stored in y_rf_pred, y_dt_pred, y_lr_pred, and y_knn_pred.
+
 Evaluating the Models:For each model, various evaluation metrics are computed and printed:
 • **Accuracy**: Calculated using accuracy_score by comparing the predicted labels (y_rf_pred, y_dt_pred, etc.) with the actual test labels (y_test).
 
@@ -45,6 +48,7 @@ Evaluating the Models:For each model, various evaluation metrics are computed an
 • **Classification Report**: Generated using classification_report to display metrics such as precision, recall, F1-score, and support for both classes.
 
 **Model Comparison**: The printed evaluation metrics (accuracy, confusion matrix, classification report) for each model provide a comparison of their performance on the test set.
+
 **Model Building Process**:
 
 1. The process starts by initializing each model with specific hyperparameters.
@@ -56,15 +60,9 @@ Evaluating the Models:For each model, various evaluation metrics are computed an
 # Evaluating the Performance of Machine Learning Models
 Here's the table with accuracy, precision, recall, and F1-score for both classes 0 and 1, followed by the analysis of the best-performing model:
 
-Model	Accuracy	Class	Precision	Recall	F1-Score
-Random Forest	0.998	0	1.00	1.00	1.00
-1	0.48	0.89	0.62
-Decision Tree	0.984	0	1.00	0.98	0.99
-1	0.09	0.84	0.15
-Logistic Regression	0.975	0	1.00	0.97	0.99
-1	0.06	0.92	0.11
-K-Nearest Neighbors	0.998	0	1.00	1.00	1.00
-1	0.48	0.87	0.62
+![image](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/588c5ca3-d6f4-4f71-8306-ae3d07209855)
+
+
 Now, analyzing the performance of these models and determine which one performed best:
 
 Random Forest:
