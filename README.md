@@ -17,7 +17,15 @@ The prevalence of credit card fraud continues to pose significant financial and 
 **Response Variable**: The 'Class' feature is the response variable that indicates whether a transaction is fraudulent (1) or legitimate (0).
 
 **Objective**:The primary objective of this study is to build and evaluate predictive models capable of identifying fraudulent credit card transactions with high accuracy, while minimizing false positives and false negatives. This involves the application of various machine learning and deep learning techniques to effectively handle the imbalanced nature of the dataset and capture intricate patterns associated with fraudulent activities.
+Table of Contents
+=================
 
+  * [Data Visualization]
+  * [Implementation of Machine learning Models]
+  * [Installation]
+        * [OR using Pathogen:](#or-using-pathogen)
+        * [OR using Vundle:](#or-using-vundle)
+  * [License](#license)
 # Data Visualization
 ![image](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/0dd94017-5b26-42a5-932d-5dfe6aab099e)
 Distribution ![image](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/31670df0-bd58-4bcd-8ec2-a7c710395a9a)
