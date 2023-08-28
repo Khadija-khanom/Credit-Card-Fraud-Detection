@@ -2,9 +2,7 @@
 ![image](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/1d1ab48c-6150-4def-9fe8-ef9a31d787ad)
 (credit card transactions made by European cardholders in September 2013)
 
-The prevalence of credit card fraud continues to pose significant financial and security risks for individuals, businesses, and financial institutions. Traditional rule-based systems are often insufficient in detecting increasingly sophisticated fraudulent activities. To address this challenge, the aim of this study is to develop and evaluate machine learning and deep learning models for accurate and efficient credit card fraud detection.
-
-**Background**: The dataset used in this study contains credit card transactions made by European cardholders in September 2013. It includes features resulting from Principal Component Analysis (PCA) transformation, which ensures the confidentiality of the original data. The dataset is highly imbalanced, with a very small proportion of fraudulent transactions compared to legitimate ones.
+**About Dataset**: The dataset used in this study contains credit card transactions made by European cardholders in September 2013. It includes features resulting from Principal Component Analysis (PCA) transformation, which ensures the confidentiality of the original data. The dataset is highly imbalanced, with a very small proportion of fraudulent transactions compared to legitimate ones.
 
 **Data Source and Timeframe**: The dataset consists of credit card transactions that occurred in September 2013. The transactions were made by European cardholders.
 
@@ -15,8 +13,6 @@ The prevalence of credit card fraud continues to pose significant financial and 
 **Features**: The dataset contains only numerical input features. Most of these features (V1 to V28) are the result of applying Principal Component Analysis (PCA) transformation to the original features. Unfortunately, the original features and additional background information are not provided due to confidentiality issues. The 'Time' feature represents the time elapsed between a transaction and the first transaction in the dataset. The 'Amount' feature represents the transaction amount.
 
 **Response Variable**: The 'Class' feature is the response variable that indicates whether a transaction is fraudulent (1) or legitimate (0).
-
-**Objective**:The primary objective of this study is to build and evaluate predictive models capable of identifying fraudulent credit card transactions with high accuracy, while minimizing false positives and false negatives. This involves the application of various machine learning and deep learning techniques to effectively handle the imbalanced nature of the dataset and capture intricate patterns associated with fraudulent activities.
 
 Table of Contents
 =================
@@ -38,77 +34,58 @@ Box plots to visualize outliers ![image](https://github.com/Khadija-khanom/Credi
 # Implementation of Machine learning Models
 This section demonstrates the process of building and evaluating several machine learning models for credit card fraud detection using the provided dataset. It covers the Random Forest, Decision Tree, Logistic Regression, and K-Nearest Neighbors models. Let's break down the structure and the process of building these models:
 
-Model Initialization: For each model (Random Forest, Decision Tree, Logistic Regression, and K-Nearest Neighbors), the code initializes a corresponding model object with specified hyperparameters.
-Training the Models: For each model, the resampled training data (X_train_resampled, y_train_resampled) obtained from applying SMOTE is used to train the model using the fit method.
-Making Predictions: After training each model, predictions are made on the test set (X_test) using the predict method, and the predicted labels are stored in y_rf_pred, y_dt_pred, y_lr_pred, and y_knn_pred.
+**Model Initialization**: For each model (Random Forest, Decision Tree, Logistic Regression, and K-Nearest Neighbors), the code initializes a corresponding model object with specified hyperparameters.
+**Training the Models**: For each model, the resampled training data (X_train_resampled, y_train_resampled) obtained from applying SMOTE is used to train the model using the fit method.
+**Making Predictions**: After training each model, predictions are made on the test set (X_test) using the predict method, and the predicted labels are stored in y_rf_pred, y_dt_pred, y_lr_pred, and y_knn_pred.
 Evaluating the Models:For each model, various evaluation metrics are computed and printed:
-• Accuracy: Calculated using accuracy_score by comparing the predicted labels (y_rf_pred, y_dt_pred, etc.) with the actual test labels (y_test).
+• **Accuracy**: Calculated using accuracy_score by comparing the predicted labels (y_rf_pred, y_dt_pred, etc.) with the actual test labels (y_test).
 
-• Confusion Matrix: Generated using confusion_matrix to show the counts of true positive, true negative, false positive, and false negative predictions.
+• **Confusion Matrix**: Generated using confusion_matrix to show the counts of true positive, true negative, false positive, and false negative predictions.
 
-• Classification Report: Generated using classification_report to display metrics such as precision, recall, F1-score, and support for both classes.
+• **Classification Report**: Generated using classification_report to display metrics such as precision, recall, F1-score, and support for both classes.
 
-Model Comparison: • The printed evaluation metrics (accuracy, confusion matrix, classification report) for each model provide a comparison of their performance on the test set.
-Model Building Process:
+**Model Comparison**: The printed evaluation metrics (accuracy, confusion matrix, classification report) for each model provide a comparison of their performance on the test set.
+**Model Building Process**:
 
-The process starts by initializing each model with specific hyperparameters.
-The models are trained using the resampled training data created through SMOTE, which addresses class imbalance.
-Predictions are made on the test set for each model.
-Model performance is evaluated using accuracy, confusion matrix, and classification report metrics.
-The results for all models are compared to understand which one performs best for the task of credit card fraud detection.
+1. The process starts by initializing each model with specific hyperparameters.
+2. The models are trained using the resampled training data created through SMOTE, which addresses class imbalance.
+3. Predictions are made on the test set for each model.
+4. Model performance is evaluated using accuracy, confusion matrix, and classification report metrics.
+5. The results for all models are compared to understand which one performs best for the task of credit card fraud detection.
 
-# Predicted Result Evaluation
-Predicted Result Evaluation
-Describing and explaining the predicted results of the models based on the provided evaluation metrics:
+# Evaluating the Performance of Machine Learning Models
+Here's the table with accuracy, precision, recall, and F1-score for both classes 0 and 1, followed by the analysis of the best-performing model:
 
-Random Forest Model:
+Model	Accuracy	Class	Precision	Recall	F1-Score
+Random Forest	0.998	0	1.00	1.00	1.00
+1	0.48	0.89	0.62
+Decision Tree	0.984	0	1.00	0.98	0.99
+1	0.09	0.84	0.15
+Logistic Regression	0.975	0	1.00	0.97	0.99
+1	0.06	0.92	0.11
+K-Nearest Neighbors	0.998	0	1.00	1.00	1.00
+1	0.48	0.87	0.62
+Now, analyzing the performance of these models and determine which one performed best:
 
-• Accuracy: 99.81%
+Random Forest:
 
-• Precision (fraudulent transactions): 48%
+Highest precision for class 0 (non-fraudulent transactions), indicating that it accurately predicts a high percentage of actual non-fraudulent cases.
+High precision and recall for class 1, making it effective at both identifying actual fraudulent transactions and non-fraudulent transactions.
+Decision Tree:
 
-• Recall (fraudulent transactions): 89%
+High precision for class 0 and recall for class 1.
+Very low precision for class 1, indicating a high number of false positives.
+High recall for class 1, suggesting it identifies a good portion of actual fraudulent transactions, but at the cost of more false positives.
+Logistic Regression:
 
-• F1-score (fraudulent transactions): 62%
+High precision and recall for class 0.
+Very low precision for class 1, leading to many false positives.
+Very high recall for class 1, indicating that it captures most actual fraudulent transactions.
+K-Nearest Neighbors:
 
-Explanation: The Random Forest model achieves high accuracy and is able to detect a significant portion of fraudulent transactions (high recall). However, the precision is relatively low, indicating that some of the predicted fraudulent transactions are false positives. This trade-off between precision and recall is reflected in the F1-score, which balances both metrics. Overall, the model performs well in detecting fraudulent transactions, but there is room for improvement in reducing false positives.
-
-Decision Tree Model:
-
-• Accuracy: 98.43%
-
-• Precision (fraudulent transactions): 9%
-
-• Recall (fraudulent transactions): 84%
-
-• F1-score (fraudulent transactions): 15%
-
-Explanation: The Decision Tree model achieves a high accuracy, but the precision is very low, indicating a high rate of false positives. The recall is relatively high, showing that the model detects a significant portion of fraudulent transactions, but the trade-off between precision and recall results in a low F1-score. This suggests that the model is missing some fraudulent transactions while producing many false positives.
-
-Logistic Regression Model: • Accuracy: 97.46%
-
-• Precision (fraudulent transactions): 6%
-
-• Recall (fraudulent transactions): 92%
-
-• F1-score (fraudulent transactions): 11%
-
-Explanation: The Logistic Regression model achieves good accuracy and high recall, indicating it's able to capture a large portion of fraudulent transactions. However, the precision is very low, meaning there are many false positives. The F1-score is also low due to the imbalance between precision and recall. This model shows promise in identifying fraudulent transactions but needs improvement in reducing false positives.
-
-K-Nearest Neighbors Model:
-
-• Accuracy: 99.82%
-
-• Precision (fraudulent transactions): 48%
-
-• Recall (fraudulent transactions): 87%
-
-• F1-score (fraudulent transactions): 62%
-
-Explanation: The K-Nearest Neighbors model achieves high accuracy and is effective at detecting fraudulent transactions, with a balance between precision and recall. Similar to the Random Forest model, there's a trade-off between precision and recall, as indicated by the F1-score. The model performs well overall, but there's still room for improvement in terms of reducing false positives.
-
-Summary: All models achieve high accuracy, but there's a common trade-off between precision and recall, leading to moderate F1-scores. This suggests that the models have the potential to detect a significant portion of fraudulent transactions, but they also produce false positives. Further model tuning and potentially exploring ensemble methods or more sophisticated algorithms might help in achieving a better balance between precision and recall, ultimately leading to improved performance in credit card fraud detection.
-
+Highest precision for class 0.
+Similar precision, recall, and F1-score for class 1 as Random Forest, indicating its effectiveness in identifying fraudulent transactions.
+Best Performing Model: Taking into consideration accuracy, precision, recall, and F1-score for both classes, the** Random Forest model** emerges as the best performer. It achieves an outstanding balance between precision and recall for both classes, indicating its robustness in identifying both fraudulent and non-fraudulent transactions accurately. The ensemble nature of Random Forest contributes to its ability to generalize well and manage overfitting, making it a suitable choice for fraud detection tasks.
 # Learning Curve of Machine Learning Models 
 ![image](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/4528c6f4-c3bd-4814-b14d-102f8bc0d7af)
 ![image](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/15854ad1-a692-45be-bf7c-01ae13d959ab)
