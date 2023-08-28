@@ -1,6 +1,23 @@
-# Credit-Card-Fraud-Detection
+# Comparative Analysis of Machine Learning and Deep Learning Algorithms for Credit Card Fraud Detection on 1st Dataset ![image](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/1d1ab48c-6150-4def-9fe8-ef9a31d787ad)
 (credit card transactions made by European cardholders in September 2013)
 
+The prevalence of credit card fraud continues to pose significant financial and security risks for individuals, businesses, and financial institutions. Traditional rule-based systems are often insufficient in detecting increasingly sophisticated fraudulent activities. To address this challenge, the aim of this study is to develop and evaluate machine learning and deep learning models for accurate and efficient credit card fraud detection.
+
+# Background:
+The dataset used in this study contains credit card transactions made by European cardholders in September 2013. It includes features resulting from Principal Component Analysis (PCA) transformation, which ensures the confidentiality of the original data. The dataset is highly imbalanced, with a very small proportion of fraudulent transactions compared to legitimate ones.
+
+# Data Source and Timeframe: 
+The dataset consists of credit card transactions that occurred in September 2013. The transactions were made by European cardholders.
+# Transaction Details: 
+The dataset covers transactions over a span of two days. Out of the 284,807 transactions in the dataset, 492 of them are labelled as fraudulent (positive class). This means that the vast majority (99.828%) of the transactions are legitimate (negative class).
+# Data Imbalance: 
+The dataset is highly imbalanced due to the small number of fraudulent transactions compared to legitimate ones. This imbalance is common in real-world fraud detection scenarios, as fraudulent transactions are typically a rare occurrence.
+# Features: 
+The dataset contains only numerical input features. Most of these features (V1 to V28) are the result of applying Principal Component Analysis (PCA) transformation to the original features. Unfortunately, the original features and additional background information are not provided due to confidentiality issues. The 'Time' feature represents the time elapsed between a transaction and the first transaction in the dataset. The 'Amount' feature represents the transaction amount.
+# Response Variable: 
+The 'Class' feature is the response variable that indicates whether a transaction is fraudulent (1) or legitimate (0).
+# Objective:
+The primary objective of this study is to build and evaluate predictive models capable of identifying fraudulent credit card transactions with high accuracy, while minimizing false positives and false negatives. This involves the application of various machine learning and deep learning techniques to effectively handle the imbalanced nature of the dataset and capture intricate patterns associated with fraudulent activities.
 # Data Visualization
 ![image](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/0dd94017-5b26-42a5-932d-5dfe6aab099e)
 Distribution ![image](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/31670df0-bd58-4bcd-8ec2-a7c710395a9a)
