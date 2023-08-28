@@ -62,30 +62,39 @@ Here's the table with accuracy, precision, recall, and F1-score for both classes
 
 ![image](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/a40820d7-217e-469b-84aa-6556aa750e8d)
 
-
-
 Now, analyzing the performance of these models and determine which one performed best:
 
-Random Forest:
+**Random Forest**:
 
-Highest precision for class 0 (non-fraudulent transactions), indicating that it accurately predicts a high percentage of actual non-fraudulent cases.
-High precision and recall for class 1, making it effective at both identifying actual fraudulent transactions and non-fraudulent transactions.
-Decision Tree:
+*Highest precision for class 0 (non-fraudulent transactions), indicating that it accurately predicts a high percentage of actual non-fraudulent cases.
 
-High precision for class 0 and recall for class 1.
-Very low precision for class 1, indicating a high number of false positives.
-High recall for class 1, suggesting it identifies a good portion of actual fraudulent transactions, but at the cost of more false positives.
-Logistic Regression:
+*High precision and recall for class 1, making it effective at both identifying actual fraudulent transactions and non-fraudulent transactions.
 
-High precision and recall for class 0.
-Very low precision for class 1, leading to many false positives.
-Very high recall for class 1, indicating that it captures most actual fraudulent transactions.
-K-Nearest Neighbors:
+**Decision Tree**:
 
-Highest precision for class 0.
-Similar precision, recall, and F1-score for class 1 as Random Forest, indicating its effectiveness in identifying fraudulent transactions.
-Best Performing Model: Taking into consideration accuracy, precision, recall, and F1-score for both classes, the** Random Forest model** emerges as the best performer. It achieves an outstanding balance between precision and recall for both classes, indicating its robustness in identifying both fraudulent and non-fraudulent transactions accurately. The ensemble nature of Random Forest contributes to its ability to generalize well and manage overfitting, making it a suitable choice for fraud detection tasks.
-# Learning Curve of Machine Learning Models 
+*High precision for class 0 and recall for class 1.
+
+*Very low precision for class 1, indicating a high number of false positives.
+
+*High recall for class 1, suggesting it identifies a good portion of actual fraudulent transactions, but at the cost of more false positives.
+
+**Logistic Regression**:
+
+*High precision and recall for class 0.
+
+*Very low precision for class 1, leading to many false positives.
+
+*Very high recall for class 1, indicating that it captures most actual fraudulent transactions.
+
+**K-Nearest Neighbors**:
+
+*Highest precision for class 0.
+
+*Similar precision, recall, and F1-score for class 1 as Random Forest, indicating its effectiveness in identifying fraudulent transactions.
+
+**Best Performing Model**: Taking into consideration accuracy, precision, recall, and F1-score for both classes, the** Random Forest model** emerges as the best performer. It achieves an outstanding balance between precision and recall for both classes, indicating its robustness in identifying both fraudulent and non-fraudulent transactions accurately. The ensemble nature of Random Forest contributes to its ability to generalize well and manage overfitting, making it a suitable choice for fraud detection tasks.
+
+**Learning Curve of Machine Learning Models**
 ![image](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/4528c6f4-c3bd-4814-b14d-102f8bc0d7af)
 ![image](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/15854ad1-a692-45be-bf7c-01ae13d959ab)
 ![image](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/981d724c-a69c-4c62-8ab0-d3ffd47e7954)
