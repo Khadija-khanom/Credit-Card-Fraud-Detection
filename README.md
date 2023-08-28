@@ -1,10 +1,10 @@
-# Comparative Analysis of Machine Learning and Deep Learning Algorithms for Credit Card Fraud Detection on 1st Dataset ![image](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/1d1ab48c-6150-4def-9fe8-ef9a31d787ad)
+# Comparative Analysis of Machine Learning and Deep Learning Algorithms for Credit Card Fraud Detection on 1st Dataset 
+![image](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/1d1ab48c-6150-4def-9fe8-ef9a31d787ad)
 (credit card transactions made by European cardholders in September 2013)
 
 The prevalence of credit card fraud continues to pose significant financial and security risks for individuals, businesses, and financial institutions. Traditional rule-based systems are often insufficient in detecting increasingly sophisticated fraudulent activities. To address this challenge, the aim of this study is to develop and evaluate machine learning and deep learning models for accurate and efficient credit card fraud detection.
 
-# Background:
-The dataset used in this study contains credit card transactions made by European cardholders in September 2013. It includes features resulting from Principal Component Analysis (PCA) transformation, which ensures the confidentiality of the original data. The dataset is highly imbalanced, with a very small proportion of fraudulent transactions compared to legitimate ones.
+#Background:The dataset used in this study contains credit card transactions made by European cardholders in September 2013. It includes features resulting from Principal Component Analysis (PCA) transformation, which ensures the confidentiality of the original data. The dataset is highly imbalanced, with a very small proportion of fraudulent transactions compared to legitimate ones.
 
 # Data Source and Timeframe: 
 The dataset consists of credit card transactions that occurred in September 2013. The transactions were made by European cardholders.
