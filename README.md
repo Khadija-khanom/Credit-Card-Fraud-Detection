@@ -155,7 +155,7 @@ The CNN is a type of deep learning model well-suited for processing grid-like da
 
 **Flatten layer**: This layer converts the pooled feature maps into a 1D vector.
 
-***Dense layers**: There are two dense layers with 128 and 1 neurons respectively. The first dense layer uses the ReLU activation function, while the last dense layer uses the sigmoid activation function for binary classification.
+**Dense layers**: There are two dense layers with 128 and 1 neurons respectively. The first dense layer uses the ReLU activation function, while the last dense layer uses the sigmoid activation function for binary classification.
 
 #### Compilation and Training:
 
@@ -185,26 +185,31 @@ Both models are constructed using the Keras Sequential API, allowing you to stac
 **Summary**: Both a CNN and an RNN were built and trained for credit card fraud detection. CNNs are effective for identifying patterns in sequences, while RNNs are suitable for sequential data. The performance of these models can vary based on their architecture, hyperparameters, and the characteristics of the dataset. Experimentation and tuning may be necessary to optimize their performance further.
 ## Evaluating the performance of deep learning models
 ### CNN Model
+
+![image](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/2335b3d7-d2f8-4d5d-9cf7-a1263ba68e30)
+
 - Highest accuracy: 0.999
 
 - Good precision, recall, and F1-score for class 1 (fraudulent transactions), indicating that it performs well on both classes.
 
 - The CNN model likely learned meaningful features from the data due to its ability to capture spatial patterns.
 
-<img width="356" alt="image" src="https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/ef9a7933-51a0-4ee2-be26-51d37898f84b">
 
 
 ### RNN Model
+
+![image](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/174eebf1-ad43-49da-88fc-9807f7f6c1cd)
+
 
 - High accuracy: 0.995
 - Low precision for class 1, indicating a higher number of false positives.
 - Very high recall for class 1, suggesting that it captures most actual fraudulent transactions.
 - The RNN model may have captured temporal patterns in the data, but the precision for class 1 is significantly lower.
-- 
-<img width="361" alt="image" src="https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/83997326-f5b8-4c7f-a4e3-eb4fb347a5bf">
+  
+
 
 **Comparative Analysis:**
-<img width="342" alt="image" src="https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/45677073-6e11-491b-9add-7fdacf587ec9">
+![image](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/65230d69-b8c6-481a-b266-f7691e36ad8e)
 
 
 - The CNN model demonstrates superior performance with higher accuracy, precision, recall, and F1-score for class 1 compared to the RNN model.
