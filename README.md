@@ -86,7 +86,7 @@ Now, analyzing the performance of these models and determine which one performed
    * Highest precision for class 0.
    * Similar precision, recall, and F1-score for class 1 as Random Forest, indicating its effectiveness in identifying fraudulent transactions.
 
-#### Best Performing Model: 
+### Best Performing Model: 
 Taking into consideration accuracy, precision, recall, and F1-score for both classes, the** Random Forest model** emerges as the best performer. It achieves an outstanding balance between precision and recall for both classes, indicating its robustness in identifying both fraudulent and non-fraudulent transactions accurately. The ensemble nature of Random Forest contributes to its ability to generalize well and manage overfitting, making it a suitable choice for fraud detection tasks.
 
 ### Learning Curve of Machine Learning Models
@@ -113,7 +113,7 @@ The CNN is a type of deep learning model well-suited for processing grid-like da
 
 ***Dense layers**: There are two dense layers with 128 and 1 neurons respectively. The first dense layer uses the ReLU activation function, while the last dense layer uses the sigmoid activation function for binary classification.
 
-#### Compilation:
+#### Compilation and Training:
 
 The model is compiled using the Adam optimizer and binary cross-entropy loss, which is suitable for binary classification tasks. The accuracy metric is also specified for evaluation.The model is trained using the training data (X_train_resampled and y_train_resampled) reshaped to fit the input shape of the model. The model is trained for 10 epochs with a batch size of 64.
 
@@ -127,8 +127,9 @@ RNNs are well-suited for sequential data, where the order of elements matters. T
 
 The RNN model is built using the Long Short-Term Memory (LSTM) cell, a type of recurrent unit that can capture long-range dependencies in sequences.
 
-**LSTM layer**: This layer has 64 LSTM units with the ReLU activation function and takes the input shape of the resampled training data. Compilation and Training:
-**Compilation**
+**LSTM layer**: This layer has 64 LSTM units with the ReLU activation function and takes the input shape of the resampled training data. 
+
+#### Compilation and Training
 Similar to the CNN, the RNN is compiled using the Adam optimizer and binary cross-entropy loss. The model is trained using the reshaped training data for 10 epochs with a batch size of 64.
 
 #### Evaluation
