@@ -17,7 +17,7 @@
 Table of Contents
 =================
 
-  * Data Visualization
+[Data Visualization](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/blob/main/README.md#data-visualization)
   * Implementation of Machine learning Models
   * Evaluating the Performance of Machine Learning Models
   * Implementation of Deep learning Models
