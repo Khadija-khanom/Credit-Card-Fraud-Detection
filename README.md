@@ -213,45 +213,38 @@ Overall, based on the provided results, the CNN model appears to be the better p
 ### Learning Curve of Deep Learning Model
 ![image](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/660ff616-bba2-4d4f-a496-6bbab285cd38)
 ## comparative analysis Between Machine learning models and Deep learning models
-Among the models we have trained, the CNN (Convolutional Neural Network) model appears to provide the best results for credit card fraud detection. Let's explain why the CNN model performed the best in detail:
+The comparative analysis and the explanation of the best-performing model is presented below:
+![image](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/c72d5988-5081-40c9-b38f-5a23e5271ed3)
+![image](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/f8618ca3-55a0-4a26-85f9-b5ada31f95bb)
 
-Model Performances and Explanation:
+![image](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/f9ee65ce-9696-43fb-8ce6-fe945dcb3d81)
 
-Random Forest:
 
-Accuracy: 99.81%
-F1-score (Fraud Class): 0.62
-Random Forest achieved high accuracy but has a relatively lower F1-score for the fraud class. It might be performing well on non-fraudulent cases but is not as effective in identifying fraud cases.
-Decision Tree:
 
-Accuracy: 98.43%
-F1-score (Fraud Class): 0.15
-The Decision Tree model has good accuracy, but its low F1-score for the fraud class indicates it might have a higher number of false negatives, classifying some fraud cases as non-fraud.
-Logistic Regression:
+**Comparative Analysis:** Comparing the machine learning models (Random Forest, Decision Tree, Logistic Regression, K-Nearest Neighbors) with the deep learning models (CNN, RNN):
 
-Accuracy: 97.46%
-F1-score (Fraud Class): 0.11
-While Logistic Regression has high accuracy, its low F1-score for the fraud class suggests it struggles to effectively detect fraud cases, leading to a high number of false negatives.
-K-Nearest Neighbors:
+**Machine Learning Models:**
 
-Accuracy: 99.82%
-F1-score (Fraud Class): 0.62
-K-Nearest Neighbors achieved high accuracy but has an F1-score similar to the Random Forest model. It might have challenges in effectively capturing complex patterns associated with fraud cases.
-CNN:
+- Random Forest, Decision Tree, Logistic Regression, and K-Nearest Neighbors achieve high accuracy, but their performance varies significantly in terms of precision, recall, and F1-score for class 1.
+- K-Nearest Neighbors and Random Forest perform relatively better due to their balanced precision and recall for class 1.
 
-Accuracy: 99.90%
-F1-score (Fraud Class): 0.75
-The CNN model achieved the highest accuracy and F1-score for the fraud class. It excels at capturing complex patterns and relationships in sequential data, making it particularly suitable for fraud detection where intricate patterns are crucial.
-RNN:
+**Deep Learning Models:**
 
-Accuracy: 99.53%
-F1-score (Fraud Class): 0.39
-The RNN model has high accuracy, but its F1-score for the fraud class is lower compared to the CNN model. This suggests that while it's identifying fraud cases, it might also be generating a higher number of false positives.
-Why the CNN Model Performed Best:
+- CNN demonstrates superior performance with the highest accuracy, precision, recall, and F1-score for class 1 compared to other models.
 
-Feature Extraction: CNNs are effective at learning relevant features from sequential data. In the case of credit card transactions, CNNs can capture hidden patterns that other models might miss.
-Pattern Recognition: Fraudulent activities often involve intricate patterns that can be better captured by CNNs' ability to identify local patterns and hierarchies.
+- RNN also performs well with high recall for class 1, but its precision is comparatively lower, leading to more false positives.
+
+**Best Performing Model:** Based on the metrics and analysis, the CNN model stands out as the best performer. It achieves the highest accuracy and maintains a balanced trade-off between precision and recall for class 1. This suggests that the CNN has a better ability to accurately detect both fraudulent and non-fraudulent transactions, likely due to its capacity to learn intricate spatial patterns in the data.
+
+**Why the CNN Model Performed Best:**
+
+**Feature Extraction:** CNNs are effective at learning relevant features from sequential data. In the case of credit card transactions, CNNs can capture hidden patterns that other models might miss.
+
+**Pattern Recognition:** Fraudulent activities often involve intricate patterns that can be better captured by CNNs' ability to identify local patterns and hierarchies.
 Complex Relationships: CNNs can identify relationships between different features and their impact on the prediction, which is important for capturing sophisticated fraud patterns.
-Conclusion:
+
+**Conclusion:**
 
 Considering the high accuracy, F1-score, and the ability to capture complex patterns, the CNN model stands out as the best performer for credit card fraud detection. Its superior performance in correctly classifying fraud cases while maintaining a good balance between precision and recall makes it the recommended choice for this specific task.
+
+
