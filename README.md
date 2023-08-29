@@ -185,30 +185,34 @@ Both models are constructed using the Keras Sequential API, allowing you to stac
 **Summary**: Both a CNN and an RNN were built and trained for credit card fraud detection. CNNs are effective for identifying patterns in sequences, while RNNs are suitable for sequential data. The performance of these models can vary based on their architecture, hyperparameters, and the characteristics of the dataset. Experimentation and tuning may be necessary to optimize their performance further.
 ## Evaluating the performance of deep learning models
 ### CNN Model
+- Highest accuracy: 0.999
 
-The CNN model achieved an accuracy of approximately 99.90%.
+- Good precision, recall, and F1-score for class 1 (fraudulent transactions), indicating that it performs well on both classes.
 
-The confusion matrix indicates that out of 56,864 non-fraudulent transactions, 56,825 were correctly predicted as non-fraudulent (true negatives). Additionally, out of 98 fraudulent transactions, 82 were correctly predicted as fraudulent (true positives).
+- The CNN model likely learned meaningful features from the data due to its ability to capture spatial patterns.
 
-The classification report provides further insights into the precision, recall, and F1-score. The model achieved a precision of 0.68 for detecting fraudulent transactions, indicating that when it predicts a transaction as fraudulent, it's correct 68% of the time. The recall (true positive rate) is 0.84, which suggests that the model is able to identify 84% of the actual fraudulent transactions.
+<img width="356" alt="image" src="https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/ef9a7933-51a0-4ee2-be26-51d37898f84b">
+
 
 ### RNN Model
 
-The RNN model achieved an accuracy of approximately 99.53%.
+- High accuracy: 0.995
+- Low precision for class 1, indicating a higher number of false positives.
+- Very high recall for class 1, suggesting that it captures most actual fraudulent transactions.
+- The RNN model may have captured temporal patterns in the data, but the precision for class 1 is significantly lower.
+- 
+<img width="361" alt="image" src="https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/83997326-f5b8-4c7f-a4e3-eb4fb347a5bf">
 
-The confusion matrix indicates that out of 56,864 non-fraudulent transactions, 56,609 were correctly predicted as non-fraudulent (true negatives). Moreover, out of 98 fraudulent transactions, 86 were correctly predicted as fraudulent (true positives).
+**Comparative Analysis:**
+<img width="342" alt="image" src="https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/45677073-6e11-491b-9add-7fdacf587ec9">
 
-The classification report highlights that the model has a lower precision of 0.25 for detecting fraudulent transactions, indicating that its predictions for fraud may have a higher false positive rate. However, the recall is 0.88, suggesting that the model is able to identify 88% of the actual fraudulent transactions.
 
-**Summary**:
+- The CNN model demonstrates superior performance with higher accuracy, precision, recall, and F1-score for class 1 compared to the RNN model.
+- The CNN's ability to capture spatial patterns is advantageous for fraud detection as it can recognize non-obvious relationships in the data.
+- The RNN's high recall suggests it's adept at identifying fraudulent transactions, but its precision is considerably lower, leading to more false positives.
 
-The CNN model outperforms the RNN model in terms of accuracy, precision, and recall for fraud detection.
+**Best Performing Model:** Based on the provided metrics and analysis, the CNN model appears to be the better performer. It exhibits higher accuracy and provides a more balanced trade-off between precision and recall for class 1. This suggests that the CNN has a better ability to accurately detect both fraudulent and non-fraudulent transactions, likely due to its capacity to learn intricate spatial patterns in the data.
 
-The CNN model has a higher precision and recall, indicating that it's better at correctly identifying both non-fraudulent and fraudulent transactions.
-
-The RNN model has a lower precision and higher recall, implying that it may produce more false positives but captures a larger proportion of actual fraud cases.
-
-Overall, based on the provided results, the CNN model appears to be the better performer between the two for this specific fraud detection task.
 
 ### Learning Curve of Deep Learning Model
 ![image](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/660ff616-bba2-4d4f-a496-6bbab285cd38)
