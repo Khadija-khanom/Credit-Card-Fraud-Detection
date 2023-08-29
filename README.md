@@ -185,8 +185,7 @@ Both models are constructed using the Keras Sequential API, allowing you to stac
 **Summary**: Both a CNN and an RNN were built and trained for credit card fraud detection. CNNs are effective for identifying patterns in sequences, while RNNs are suitable for sequential data. The performance of these models can vary based on their architecture, hyperparameters, and the characteristics of the dataset. Experimentation and tuning may be necessary to optimize their performance further.
 ## Evaluating the performance of deep learning models
 ### CNN Model
-
-![image](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/2335b3d7-d2f8-4d5d-9cf7-a1263ba68e30)
+![image](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/684e5886-736c-427f-abef-49237d3a99da)
 
 - Highest accuracy: 0.999
 
@@ -198,16 +197,13 @@ Both models are constructed using the Keras Sequential API, allowing you to stac
 
 ### RNN Model
 
-![image](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/174eebf1-ad43-49da-88fc-9807f7f6c1cd)
-
+![image](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/d0af9db4-8643-4b10-8729-0e0d5cbbb5fc)
 
 - High accuracy: 0.995
 - Low precision for class 1, indicating a higher number of false positives.
 - Very high recall for class 1, suggesting that it captures most actual fraudulent transactions.
 - The RNN model may have captured temporal patterns in the data, but the precision for class 1 is significantly lower.
   
-
-
 **Comparative Analysis:**
 ![image](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/assets/138976722/65230d69-b8c6-481a-b266-f7691e36ad8e)
 
