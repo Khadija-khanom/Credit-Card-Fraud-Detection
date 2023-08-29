@@ -18,30 +18,52 @@ Table of Contents
 =================
 
 [Data Visualization](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/blob/main/README.md#data-visualization)
+
 [Implementation of Machine learning Models](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/blob/main/README.md#implementation-of-machine-learning-models)
-*[Model Building Process](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/blob/main/README.md#model-building-process)
+
+* [Model Building Process](https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/blob/main/README.md#model-building-process)
+
 [Evaluating the Performance of Machine Learning Models]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/blob/main/README.md#evaluating-the-performance-of-machine-learning-models)
-*[Random Forest]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/blob/main/README.md#random-forest)
-*[Decision Tree]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/blob/main/README.md#decision-tree)
-*[Logistic Regression]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/blob/main/README.md#logistic-regression)
-*[K-Nearest Neighbours]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/blob/main/README.md#k-nearest-neighbors)
-*[Best Performing Model]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/blob/main/README.md#best-performing-model)
-*[Learning Curve of Machine Learning Models]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/blob/main/README.md#learning-curve-of-machine-learning-models)
+
+* [Random Forest]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/blob/main/README.md#random-forest)
+
+* [Decision Tree]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/blob/main/README.md#decision-tree)
+   
+* [Logistic Regression]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/blob/main/README.md#logistic-regression)
+  
+* [K-Nearest Neighbours]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/blob/main/README.md#k-nearest-neighbors)
+  
+* [Best Performing Model]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/blob/main/README.md#best-performing-model)
+  
+* [Learning Curve of Machine Learning Models]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/blob/main/README.md#learning-curve-of-machine-learning-models)
+  
 
 [Implementation Of Deep learning model]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/blob/main/README.md#implementation-of-deep-learning-model)
-*[Convolutional Neural Network (CNN)]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/blob/main/README.md#convolutional-neural-network-cnn)
-  -[Model Structure]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/blob/main/README.md#model-structure)
 
-  -[Compilation]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/blob/main/README.md#compilation)
-  -[Evaluation]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/blob/main/README.md#evaluation)
-*[Recurrent Neural Network (RNN)]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/blob/main/README.md#recurrent-neural-network-rnn)
-  -[Model Structure]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection#model-structure-1)
-  -[Compilation and Training]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection#compilation-and-training-1)
-  -[Evaluation]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection#evaluation-1)
+* [Convolutional Neural Network (CNN)]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/blob/main/README.md#convolutional-neural-network-cnn)
+  
+  - [Model Structure]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/blob/main/README.md#model-structure)
+
+  - [Compilation]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/blob/main/README.md#compilation)
+  
+  - [Evaluation]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/blob/main/README.md#evaluation)
+    
+* [Recurrent Neural Network (RNN)]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection/blob/main/README.md#recurrent-neural-network-rnn)
+  
+  - [Model Structure]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection#model-structure-1)
+    
+  - [Compilation and Training]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection#compilation-and-training-1)
+    
+  - [Evaluation]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection#evaluation-1)
+    
 [Evaluating the performance of deep learning models]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection#evaluating-the-performance-of-deep-learning-models)
-*[CNN Model]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection#cnn-model)
-*[RNN Model]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection#rnn-model)
-*[Learning Curve of Deep Learning Model]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection#learning-curve-of-deep-learning-model)
+
+* [CNN Model]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection#cnn-model)
+  
+* [RNN Model]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection#rnn-model)
+  
+* [Learning Curve of Deep Learning Model]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection#learning-curve-of-deep-learning-model)
+  
 [comparative analysis Between Machine learning models and Deep learning models]( https://github.com/Khadija-khanom/Credit-Card-Fraud-Detection#comparative-analysis-between-machine-learning-models-and-deep-learning-models)
 
  
